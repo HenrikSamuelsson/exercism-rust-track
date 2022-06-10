@@ -156,4 +156,4 @@ elapsed_time_in_minutes(3, 20)
 ### Created by
 
 - @coriolinus
-- @ErikSchierboom
+- @ErikSchierboo
