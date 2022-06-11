@@ -18,7 +18,6 @@ fn preparation_time_in_minutes_for_one_layer() {
     assert_eq!(2, preparation_time_in_minutes(1));
 }
 
-#[ignore]
 #[test]
 fn preparation_time_in_minutes_for_multiple_layers() {
     assert_eq!(8, preparation_time_in_minutes(4));
