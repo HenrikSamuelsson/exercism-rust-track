@@ -13,7 +13,6 @@ fn remaining_minutes_in_oven_after_fifteen_minutes() {
     assert_eq!(15, remaining_minutes_in_oven(25));
 }
 
-#[ignore]
 #[test]
 fn preparation_time_in_minutes_for_one_layer() {
     assert_eq!(2, preparation_time_in_minutes(1));
