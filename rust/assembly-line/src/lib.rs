@@ -3,7 +3,7 @@
 #![allow(unused)]
 
 pub fn production_rate_per_hour(speed: u8) -> f64 {
-    0.0
+    speed as f64 * 221.0
 }
 
 pub fn working_items_per_minute(speed: u8) -> u32 {
