@@ -7,8 +7,11 @@ pub fn production_rate_per_hour(speed: u8) -> f64 {
     if speed < 5 {
         production_rate = speed as f64 * 221.0;
     }
-    else {
+    else if speed < 9{
         production_rate = speed as f64 * 221.0 * 0.9;
+    }
+    else {
+        production_rate = speed as f64 * 221.0 * 0.77;
     }
     return production_rate;
 }
