@@ -14,7 +14,9 @@ pub fn log(level: LogLevel, message: &str) -> String {
     unimplemented!()
 }
 pub fn info(message: &str) -> String {
-    unimplemented!()
+    let mut info_message = "[INFO]: ".to_owned();
+    info_message.push_str(message);
+    return info_message.to_string();
 }
 pub fn warn(message: &str) -> String {
     unimplemented!()
