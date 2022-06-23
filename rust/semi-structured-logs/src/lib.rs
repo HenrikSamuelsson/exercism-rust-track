@@ -11,7 +11,8 @@ pub enum LogLevel {
 }
 /// primary function for emitting logs
 pub fn log(level: LogLevel, message: &str) -> String {
-    unimplemented!()
+    let log_message = warn(message);
+    return log_message;
 }
 pub fn info(message: &str) -> String {
     let mut info_message = "[INFO]: ".to_owned();
