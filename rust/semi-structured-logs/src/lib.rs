@@ -24,5 +24,7 @@ pub fn warn(message: &str) -> String {
     return warning_message.to_string();
 }
 pub fn error(message: &str) -> String {
-    unimplemented!()
+    let mut error_message = "[ERROR]: ".to_owned();
+    error_message.push_str(message);
+    return error_message.to_string();
 }
