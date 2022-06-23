@@ -19,7 +19,9 @@ pub fn info(message: &str) -> String {
     return info_message.to_string();
 }
 pub fn warn(message: &str) -> String {
-    unimplemented!()
+    let mut warning_message = "[WARNING]: ".to_owned();
+    warning_message.push_str(message);
+    return warning_message.to_string();
 }
 pub fn error(message: &str) -> String {
     unimplemented!()
