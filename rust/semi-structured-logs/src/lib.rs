@@ -7,6 +7,7 @@
 pub enum LogLevel {
     Info,
     Warning,
+    Debug,
     Error,
 }
 /// primary function for emitting logs
@@ -14,7 +15,8 @@ pub fn log(level: LogLevel, message: &str) -> String {
     match level {
         LogLevel::Info => info(message),
         LogLevel::Warning => warn(message),
-        LogLevel::Error => error(message,)
+        LogLevel::Debug => debug(message),
+        LogLevel::Error => error(message),
     }
 }
 pub fn info(message: &str) -> String {
@@ -31,4 +33,9 @@ pub fn error(message: &str) -> String {
     let mut error_message = "[ERROR]: ".to_owned();
     error_message.push_str(message);
     return error_message.to_string();
+}
+pub fn debug(message: &str) -> String {
+    let mut debug_message = "[DEBUG]: ".to_owned();
+    debug_message.push_str(message);
+    return debug_message.to_string();
 }
